@@ -1,0 +1,108 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.wave.carbar"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+8-->/mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->/mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml
+10
+11    <!-- add required permission -->
+12    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+12-->/mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:7:5-76
+12-->/mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:7:22-74
+13    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+13-->/mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:8:5-77
+13-->/mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:8:22-75
+14    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+14-->/mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:9:5-76
+14-->/mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:9:22-74
+15
+16    <application
+16-->/mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:11:5-33:19
+17        android:allowBackup="true"
+17-->/mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:12:9-35
+18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+18-->[androidx.core:core:1.8.0] /home/james/.gradle/caches/transforms-3/0638d9dacb5fd10604e28ec2b4d3c80b/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
+19        android:debuggable="true"
+20        android:extractNativeLibs="false"
+21        android:icon="@mipmap/ic_launcher"
+21-->/mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:13:9-43
+22        android:label="@string/app_name"
+22-->/mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:14:9-41
+23        android:roundIcon="@mipmap/ic_launcher_round"
+23-->/mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:15:9-54
+24        android:supportsRtl="true"
+24-->/mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:16:9-35
+25        android:testOnly="true"
+26        android:theme="@style/Theme.CarBar" >
+26-->/mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:17:9-44
+27
+28        <!-- register the service -->
+29        <service
+29-->/mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:20:9-23:38
+30            android:name="com.wave.carbar.ForegroundService"
+30-->/mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:21:13-46
+31            android:enabled="true"
+31-->/mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:22:13-35
+32            android:exported="true" />
+32-->/mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:23:13-36
+33
+34        <activity
+34-->/mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:25:9-32:20
+35            android:name="com.wave.carbar.MainActivity"
+35-->/mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:25:19-47
+36            android:exported="true" >
+36-->/mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:26:13-36
+37            <intent-filter>
+37-->/mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:27:13-31:29
+38                <action android:name="android.intent.action.MAIN" />
+38-->/mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:28:17-69
+38-->/mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:28:25-66
+39
+40                <category android:name="android.intent.category.LAUNCHER" />
+40-->/mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:30:17-77
+40-->/mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:30:27-74
+41            </intent-filter>
+42        </activity>
+43
+44        <provider
+44-->[androidx.emoji2:emoji2:1.2.0] /home/james/.gradle/caches/transforms-3/9f99c19470d8bf18ee15270d078c3173/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+45            android:name="androidx.startup.InitializationProvider"
+45-->[androidx.emoji2:emoji2:1.2.0] /home/james/.gradle/caches/transforms-3/9f99c19470d8bf18ee15270d078c3173/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+46            android:authorities="com.wave.carbar.androidx-startup"
+46-->[androidx.emoji2:emoji2:1.2.0] /home/james/.gradle/caches/transforms-3/9f99c19470d8bf18ee15270d078c3173/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+47            android:exported="false" >
+47-->[androidx.emoji2:emoji2:1.2.0] /home/james/.gradle/caches/transforms-3/9f99c19470d8bf18ee15270d078c3173/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+48            <meta-data
+48-->[androidx.emoji2:emoji2:1.2.0] /home/james/.gradle/caches/transforms-3/9f99c19470d8bf18ee15270d078c3173/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+49                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+49-->[androidx.emoji2:emoji2:1.2.0] /home/james/.gradle/caches/transforms-3/9f99c19470d8bf18ee15270d078c3173/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+50                android:value="androidx.startup" />
+50-->[androidx.emoji2:emoji2:1.2.0] /home/james/.gradle/caches/transforms-3/9f99c19470d8bf18ee15270d078c3173/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+51            <meta-data
+51-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/james/.gradle/caches/transforms-3/a68586d9ac6fc4872d4884a947d1c1d5/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+52                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+52-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/james/.gradle/caches/transforms-3/a68586d9ac6fc4872d4884a947d1c1d5/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+53                android:value="androidx.startup" />
+53-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/james/.gradle/caches/transforms-3/a68586d9ac6fc4872d4884a947d1c1d5/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+54        </provider>
+55
+56        <uses-library
+56-->[androidx.window:window:1.0.0] /home/james/.gradle/caches/transforms-3/44eb76c63a430958185cfd53aa9f79f1/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
+57            android:name="androidx.window.extensions"
+57-->[androidx.window:window:1.0.0] /home/james/.gradle/caches/transforms-3/44eb76c63a430958185cfd53aa9f79f1/transformed/window-1.0.0/AndroidManifest.xml:26:13-54
+58            android:required="false" />
+58-->[androidx.window:window:1.0.0] /home/james/.gradle/caches/transforms-3/44eb76c63a430958185cfd53aa9f79f1/transformed/window-1.0.0/AndroidManifest.xml:27:13-37
+59        <uses-library
+59-->[androidx.window:window:1.0.0] /home/james/.gradle/caches/transforms-3/44eb76c63a430958185cfd53aa9f79f1/transformed/window-1.0.0/AndroidManifest.xml:28:9-30:40
+60            android:name="androidx.window.sidecar"
+60-->[androidx.window:window:1.0.0] /home/james/.gradle/caches/transforms-3/44eb76c63a430958185cfd53aa9f79f1/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
+61            android:required="false" />
+61-->[androidx.window:window:1.0.0] /home/james/.gradle/caches/transforms-3/44eb76c63a430958185cfd53aa9f79f1/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
+62    </application>
+63
+64</manifest>
