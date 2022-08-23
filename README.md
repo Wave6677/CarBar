@@ -1,4 +1,4 @@
-![CarBar](https://user-images.githubusercontent.com/86343914/186068932-27b0ab47-ff36-4777-935c-729ddeefa53c.png)
+![CarBar](https://user-images.githubusercontent.com/86343914/186069148-0f14c8d2-c459-44e7-be35-4cd66edd1ca8.png)
 # CarBar
 CarBar is a Free Open-Source (FOSS) Android application that implements an intuitive way to interact with your phone while operating a motor vehicle (where legal.) Works on Android 8 Oreo and above
 
