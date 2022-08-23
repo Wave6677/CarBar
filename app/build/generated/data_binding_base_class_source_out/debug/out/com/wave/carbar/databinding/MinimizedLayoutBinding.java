@@ -5,9 +5,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.wave.carbar.R;
@@ -17,20 +17,19 @@ import java.lang.String;
 
 public final class MinimizedLayoutBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final RelativeLayout rootView;
 
   @NonNull
-  public final Button enlargeCarBar;
+  public final Button homeButton;
 
-  private MinimizedLayoutBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button enlargeCarBar) {
+  private MinimizedLayoutBinding(@NonNull RelativeLayout rootView, @NonNull Button homeButton) {
     this.rootView = rootView;
-    this.enlargeCarBar = enlargeCarBar;
+    this.homeButton = homeButton;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public RelativeLayout getRoot() {
     return rootView;
   }
 
@@ -55,13 +54,13 @@ public final class MinimizedLayoutBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.enlargeCarBar;
-      Button enlargeCarBar = ViewBindings.findChildViewById(rootView, id);
-      if (enlargeCarBar == null) {
+      id = R.id.homeButton;
+      Button homeButton = ViewBindings.findChildViewById(rootView, id);
+      if (homeButton == null) {
         break missingId;
       }
 
-      return new MinimizedLayoutBinding((ConstraintLayout) rootView, enlargeCarBar);
+      return new MinimizedLayoutBinding((RelativeLayout) rootView, homeButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -1,59 +1,35 @@
 [
     {
-        "merged": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-merged_res-41:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-main-43:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "com.wave.carbar.app-merged_res-41:/layout_minimized_layout.xml.flat",
+        "source": "com.wave.carbar.app-main-43:/layout/minimized_layout.xml"
     },
     {
-        "merged": "com.wave.carbar.app-merged_res-41:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.wave.carbar.app-main-43:/mipmap-anydpi-v26/ic_launcher.xml"
-    },
-    {
-        "merged": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-merged_res-41:/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-main-43:/mipmap-xxxhdpi/ic_launcher.png"
-    },
-    {
-        "merged": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-merged_res-41:/mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-main-43:/mipmap-mdpi/ic_launcher_round.png"
-    },
-    {
-        "merged": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-merged_res-41:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-main-43:/mipmap-xxhdpi/ic_launcher_round.webp"
-    },
-    {
-        "merged": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-merged_res-41:/mipmap-hdpi_ic_launcher.png.flat",
-        "source": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-main-43:/mipmap-hdpi/ic_launcher.png"
-    },
-    {
-        "merged": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-merged_res-41:/mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-main-43:/mipmap-xhdpi/ic_launcher_round.png"
-    },
-    {
-        "merged": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-merged_res-41:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-main-43:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-merged_res-41:/layout_content_main.xml.flat",
+        "source": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-main-43:/layout/content_main.xml"
     },
     {
         "merged": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-merged_res-41:/xml_data_extraction_rules.xml.flat",
         "source": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-main-43:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-merged_res-41:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-main-43:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-merged_res-41:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-main-43:/drawable/ic_launcher_foreground.xml"
     },
     {
         "merged": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-merged_res-41:/navigation_nav_graph.xml.flat",
         "source": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-main-43:/navigation/nav_graph.xml"
     },
     {
+        "merged": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-merged_res-41:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-main-43:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
         "merged": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-merged_res-41:/drawable_ic_launcher_background.xml.flat",
         "source": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-main-43:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-merged_res-41:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-main-43:/mipmap-hdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-merged_res-41:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-main-43:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-merged_res-41:/layout_fragment_second.xml.flat",
+        "source": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-main-43:/layout/fragment_second.xml"
     },
     {
         "merged": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-merged_res-41:/xml_backup_rules.xml.flat",
@@ -72,14 +48,6 @@
         "source": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-main-43:/layout/fragment_first.xml"
     },
     {
-        "merged": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-merged_res-41:/mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-main-43:/mipmap-hdpi/ic_launcher_round.png"
-    },
-    {
-        "merged": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-merged_res-41:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-main-43:/mipmap-mdpi/ic_launcher_round.webp"
-    },
-    {
         "merged": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-merged_res-41:/menu_menu_main.xml.flat",
         "source": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-main-43:/menu/menu_main.xml"
     },
@@ -90,65 +58,5 @@
     {
         "merged": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-merged_res-41:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-main-43:/mipmap-anydpi-v26/ic_launcher_round.xml"
-    },
-    {
-        "merged": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-merged_res-41:/drawable_ic_baseline_directions_car_24.xml.flat",
-        "source": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-main-43:/drawable/ic_baseline_directions_car_24.xml"
-    },
-    {
-        "merged": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-merged_res-41:/mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-main-43:/mipmap-xxhdpi/ic_launcher_round.png"
-    },
-    {
-        "merged": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-merged_res-41:/layout_content_main.xml.flat",
-        "source": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-main-43:/layout/content_main.xml"
-    },
-    {
-        "merged": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-merged_res-41:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-main-43:/mipmap-hdpi/ic_launcher_round.webp"
-    },
-    {
-        "merged": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-merged_res-41:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-main-43:/mipmap-xxxhdpi/ic_launcher_round.png"
-    },
-    {
-        "merged": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-merged_res-41:/drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-main-43:/drawable-v24/ic_launcher_foreground.xml"
-    },
-    {
-        "merged": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-merged_res-41:/mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-main-43:/mipmap-xxhdpi/ic_launcher.png"
-    },
-    {
-        "merged": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-merged_res-41:/mipmap-mdpi_ic_launcher.png.flat",
-        "source": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-main-43:/mipmap-mdpi/ic_launcher.png"
-    },
-    {
-        "merged": "com.wave.carbar.app-merged_res-41:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.wave.carbar.app-main-43:/mipmap-anydpi-v26/ic_launcher_round.xml"
-    },
-    {
-        "merged": "com.wave.carbar.app-merged_res-41:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "com.wave.carbar.app-main-43:/drawable/ic_launcher_foreground.xml"
-    },
-    {
-        "merged": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-merged_res-41:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-main-43:/mipmap-anydpi-v26/ic_launcher.xml"
-    },
-    {
-        "merged": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-merged_res-41:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-main-43:/mipmap-xhdpi/ic_launcher_round.webp"
-    },
-    {
-        "merged": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-merged_res-41:/layout_fragment_second.xml.flat",
-        "source": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-main-43:/layout/fragment_second.xml"
-    },
-    {
-        "merged": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-merged_res-41:/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-main-43:/mipmap-xhdpi/ic_launcher.png"
-    },
-    {
-        "merged": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-merged_res-41:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-main-43:/mipmap-xhdpi/ic_launcher.webp"
     }
 ]

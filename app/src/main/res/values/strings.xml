@@ -12,4 +12,7 @@
     <string name="musicText">🎶</string>
     <string name="textText">🗨️</string>
     <string name="mapText">🗺️</string>
+    <string name="close_text">❌</string>
+    <string name="minimize_text">➖</string>
+    <string name="home_text">🏠</string>
 </resources>

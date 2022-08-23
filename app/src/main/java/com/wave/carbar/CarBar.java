@@ -1,8 +1,8 @@
 package com.wave.carbar;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.PixelFormat;
-import android.os.Build;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -15,6 +15,16 @@ import android.content.Intent;
 import static android.content.Context.WINDOW_SERVICE;
 
 public class CarBar {
+    // declaring required variables
+    private final Context context;
+    private final View mView;
+    private final WindowManager mWindowManager;
+    private final WindowManager.LayoutParams mParams;
+    //Replace with user selected apps later
+    public String musicApp = "it.vfsfitvnm.vimusic";
+    public String mapsApp = "net.osmand.plus";
+    public String textsApp = "org.thoughtcrime.securesms";
+    public String homeApp = "com.wave.carbar";
 
     public void startNewActivity(Context context, String packageName) {
         Intent intent = context.getPackageManager().getLaunchIntentForPackage(packageName);
@@ -27,94 +37,12 @@ public class CarBar {
         context.startActivity(intent);
     }
 
-    // declaring required variables
-    private Context context;
-    private View mView;
-    private WindowManager.LayoutParams mParams;
-    private WindowManager mWindowManager;
-    private LayoutInflater layoutInflater;
-    //Replace with user selected apps later
-    public String musicApp = "it.vfsfitvnm.vimusic";
-    public String mapsApp = "net.osmand.plus";
-    public String textsApp = "org.thoughtcrime.securesms";
-
-    public CarBar(Context context){
-
-        this.context=context;
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            // set the layout parameters of the window
-            mParams = new WindowManager.LayoutParams(
-                    // Shrink the window to wrap the content rather
-                    // than filling the screen
-                    WindowManager.LayoutParams.WRAP_CONTENT, WindowManager.LayoutParams.WRAP_CONTENT,
-                    // Display it on top of other application windows
-                    WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY,
-                    // Don't let it grab the input focus
-                    WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE,
-                    // Make the underlying application window visible
-                    // through any transparent parts
-                    PixelFormat.TRANSLUCENT);
-
-        }
-        // getting a LayoutInflater
-        layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        // inflating the view with the custom layout we created
-        mView = layoutInflater.inflate(R.layout.carbar_window, null);
-        // set onClickListener on the remove button, which removes
-        // the view from the window
-
-        //Music button func
-        mView.findViewById(R.id.open_music).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startNewActivity(context, musicApp);
-            }
-        });
-        //Maps button func
-        mView.findViewById(R.id.open_maps).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startNewActivity(context, mapsApp);
-            }
-        });
-        //Texts button func
-        mView.findViewById(R.id.open_texts).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startNewActivity(context, textsApp);
-            }
-        });
-        //Minimize func
-        mView.findViewById(R.id.homeButton).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startNewActivity(context, "com.wave.carbar");
-            }
-        });
-        //Minimize func
-        mView.findViewById(R.id.minimizeButton).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startNewActivity(context, textsApp);
-            }
-        });
-        //Close func
-      mView.findViewById(R.id.closeButton).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                close();
-            }
-        });        // Define the position of the
-        // window within the screen
-        mParams.gravity = Gravity.BOTTOM;
-        mWindowManager = (WindowManager)context.getSystemService(WINDOW_SERVICE);
-
+    public void minimizeCarBar(Context context) {
+        Intent minimizeIntent = new Intent(String.valueOf(minimizedCarBar.class));
+        context.startActivity(minimizeIntent);
     }
 
-
     public void open() {
-
         try {
             // check if the view is already
             // inflated or present in the window
@@ -127,8 +55,8 @@ public class CarBar {
             Log.d("Error1",e.toString());
         }
     }
-    public void close() {
 
+    public void close() {
         try {
             // remove the view from the window
             ((WindowManager)context.getSystemService(WINDOW_SERVICE)).removeView(mView);
@@ -143,5 +71,41 @@ public class CarBar {
             Log.d("Error2",e.toString());
         }
     }
-
+    @SuppressLint("InflateParams")
+    public CarBar(Context context){
+        this.context=context;
+        // set the layout parameters of the window
+        mParams = new WindowManager.LayoutParams(
+                // Shrink the window to wrap the content rather
+                // than filling the screen
+                WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.WRAP_CONTENT,
+                // Display it on top of other application windows
+                WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY,
+                // Don't let it grab the input focus
+                WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE,
+                // Make the underlying application window visible
+                // through any transparent parts
+                PixelFormat.TRANSLUCENT);
+        // getting a LayoutInflater
+        LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        // inflating the view with the custom layout we created
+        mView = layoutInflater.inflate(R.layout.carbar_window, null);
+        // set onClickListener on the remove button, which removes
+        // the view from the window
+        //Music button func
+       mView.findViewById(R.id.open_music).setOnClickListener(view -> startNewActivity(context, musicApp));
+        //Maps button func
+        mView.findViewById(R.id.open_maps).setOnClickListener(view -> startNewActivity(context, mapsApp));
+        //Texts button func
+        mView.findViewById(R.id.open_texts).setOnClickListener(view -> startNewActivity(context, textsApp));
+        //Minimize func
+        mView.findViewById(R.id.homeButton).setOnClickListener(view -> startNewActivity(context, homeApp));
+        //Minimize func
+        mView.findViewById(R.id.minimizeButton).setOnClickListener(view -> minimizeCarBar(context));
+        //Close func
+      mView.findViewById(R.id.closeButton).setOnClickListener(view -> close());      // Define the position of the
+        // window within the screen
+        mParams.gravity = Gravity.BOTTOM;
+        mWindowManager = (WindowManager)context.getSystemService(WINDOW_SERVICE);
     }
+}

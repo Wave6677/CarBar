@@ -16,10 +16,10 @@ id SecondFragment
 id action_FirstFragment_to_SecondFragment
 id action_SecondFragment_to_FirstFragment
 id action_settings
+id buttonName
 id button_first
 id button_second
 id closeButton
-id enlargeCarBar
 id fab
 id homeButton
 id minimizeButton
@@ -43,10 +43,13 @@ mipmap ic_launcher_round
 navigation nav_graph
 string action_settings
 string app_name
+string close_text
 string first_fragment_label
 string hello_first_fragment
 string hello_second_fragment
+string home_text
 string mapText
+string minimize_text
 string musicText
 string next
 string previous

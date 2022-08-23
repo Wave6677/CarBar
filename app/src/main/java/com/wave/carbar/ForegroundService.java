@@ -6,10 +6,8 @@ import android.app.NotificationManager;
 import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
-import android.os.Build;
 import android.os.IBinder;
 
-import androidx.annotation.RequiresApi;
 import androidx.core.app.NotificationCompat;
 
 public class ForegroundService extends Service {
@@ -26,10 +24,7 @@ public class ForegroundService extends Service {
         super.onCreate();
         // create the custom or default notification
         // based on the android version
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O)
-            startMyOwnForeground();
-        else
-            startForeground(1, new Notification());
+        startMyOwnForeground();
 
         // create an instance of Window class
         // and display the content on screen
@@ -45,7 +40,6 @@ public class ForegroundService extends Service {
     // for android version >=O we need to create
     // custom notification stating
     // foreground service is running
-    @RequiresApi(Build.VERSION_CODES.O)
     private void startMyOwnForeground()
     {
         String NOTIFICATION_CHANNEL_ID = "example.permanence";
