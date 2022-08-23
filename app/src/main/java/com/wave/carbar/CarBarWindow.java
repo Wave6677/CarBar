@@ -14,7 +14,7 @@ import android.content.Intent;
 
 import static android.content.Context.WINDOW_SERVICE;
 
-public class CarBar {
+public class CarBarWindow {
     // declaring required variables
     private final Context context;
     private final View mView;
@@ -38,8 +38,9 @@ public class CarBar {
     }
 
     public void minimizeCarBar(Context context) {
-        Intent minimizeIntent = new Intent(String.valueOf(minimizedCarBar.class));
-        context.startActivity(minimizeIntent);
+        minimizedCarBar minimizedCarBar = new minimizedCarBar(context);
+        minimizedCarBar.open();
+        close();
     }
 
     public void open() {
@@ -72,7 +73,7 @@ public class CarBar {
         }
     }
     @SuppressLint("InflateParams")
-    public CarBar(Context context){
+    public CarBarWindow(Context context){
         this.context=context;
         // set the layout parameters of the window
         mParams = new WindowManager.LayoutParams(

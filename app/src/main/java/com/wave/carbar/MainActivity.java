@@ -1,10 +1,15 @@
 package com.wave.carbar;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Context;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.WindowManager;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,31 +24,21 @@ public class MainActivity extends AppCompatActivity {
 
     // method for starting the service
     public void startService(){
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            // check if the user has already granted
-            // the Draw over other apps permission
-            if(Settings.canDrawOverlays(this)) {
-                // start the service based on the android version
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                    startForegroundService(new Intent(this, ForegroundService.class));
-                } else {
-                    startService(new Intent(this, ForegroundService.class));
-                }
-            }
-        }else{
-            startService(new Intent(this, ForegroundService.class));
+        // check if the user has already granted
+        // the Draw over other apps permission
+        if(Settings.canDrawOverlays(this)) {
+            // start the service based on the android version
+            startForegroundService(new Intent(this, ForegroundService.class));
         }
     }
 
     // method to ask user to grant the Overlay permission
     public void checkOverlayPermission(){
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            if (!Settings.canDrawOverlays(this)) {
-                // send user to the device settings
-                Intent myIntent = new Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION);
-                startActivity(myIntent);
-            }
+        if (!Settings.canDrawOverlays(this)) {
+            // send user to the device settings
+            Intent myIntent = new Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION);
+            startActivity(myIntent);
         }
     }
 
@@ -53,5 +48,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         startService();
+    }
+
+    public MainActivity(){
+
     }
 }

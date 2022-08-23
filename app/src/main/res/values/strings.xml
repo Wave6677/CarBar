@@ -15,4 +15,6 @@
     <string name="close_text">❌</string>
     <string name="minimize_text">➖</string>
     <string name="home_text">🏠</string>
+    <string name="expandCarBar"><![CDATA[>]]></string>
+    <string name="text_label">\"hello world\"</string>
 </resources>

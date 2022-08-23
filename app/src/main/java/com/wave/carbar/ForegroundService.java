@@ -28,8 +28,8 @@ public class ForegroundService extends Service {
 
         // create an instance of Window class
         // and display the content on screen
-        CarBar carBar =new CarBar(this);
-        carBar.open();
+        CarBarWindow carBarWindow =new CarBarWindow(this);
+        carBarWindow.open();
     }
 
     @Override

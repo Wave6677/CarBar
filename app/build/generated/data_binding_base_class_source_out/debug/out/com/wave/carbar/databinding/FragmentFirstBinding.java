@@ -5,7 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.TextView;
+import android.widget.Switch;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -21,16 +21,16 @@ public final class FragmentFirstBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button buttonFirst;
+  public final Switch carBarActivation;
 
   @NonNull
-  public final TextView textviewFirst;
+  public final Button tesButton;
 
-  private FragmentFirstBinding(@NonNull ConstraintLayout rootView, @NonNull Button buttonFirst,
-      @NonNull TextView textviewFirst) {
+  private FragmentFirstBinding(@NonNull ConstraintLayout rootView, @NonNull Switch carBarActivation,
+      @NonNull Button tesButton) {
     this.rootView = rootView;
-    this.buttonFirst = buttonFirst;
-    this.textviewFirst = textviewFirst;
+    this.carBarActivation = carBarActivation;
+    this.tesButton = tesButton;
   }
 
   @Override
@@ -60,19 +60,19 @@ public final class FragmentFirstBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.button_first;
-      Button buttonFirst = ViewBindings.findChildViewById(rootView, id);
-      if (buttonFirst == null) {
+      id = R.id.carBarActivation;
+      Switch carBarActivation = ViewBindings.findChildViewById(rootView, id);
+      if (carBarActivation == null) {
         break missingId;
       }
 
-      id = R.id.textview_first;
-      TextView textviewFirst = ViewBindings.findChildViewById(rootView, id);
-      if (textviewFirst == null) {
+      id = R.id.tesButton;
+      Button tesButton = ViewBindings.findChildViewById(rootView, id);
+      if (tesButton == null) {
         break missingId;
       }
 
-      return new FragmentFirstBinding((ConstraintLayout) rootView, buttonFirst, textviewFirst);
+      return new FragmentFirstBinding((ConstraintLayout) rootView, carBarActivation, tesButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

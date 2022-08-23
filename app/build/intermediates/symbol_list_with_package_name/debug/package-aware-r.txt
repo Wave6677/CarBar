@@ -2667,11 +2667,12 @@ id bounceEnd
 id bounceStart
 id buttonName
 id buttonPanel
-id button_first
 id button_second
 id cache_measures
 id callMeasure
 id cancel_button
+id carBarActivation
+id carBarSettings
 id carryVelocity
 id center
 id centerCrop
@@ -2756,9 +2757,9 @@ id endToStart
 id enterAlways
 id enterAlwaysCollapsed
 id exitUntilCollapsed
+id expandDong
 id expand_activities_button
 id expanded_menu
-id fab
 id fade
 id fill
 id fill_horizontal
@@ -2880,7 +2881,6 @@ id multiply
 id nav_controller_view_tag
 id nav_graph
 id nav_host_fragment_container
-id nav_host_fragment_content_main
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -3012,6 +3012,7 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
+id tesButton
 id test_checkbox_android_button_tint
 id test_checkbox_app_button_tint
 id test_radiobutton_android_button_tint
@@ -3032,14 +3033,12 @@ id textinput_helper_text
 id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
-id textview_first
 id textview_second
 id time
 id title
 id titleDividerNoCustom
 id title_template
 id toggle
-id toolbar
 id top
 id topPanel
 id touch_outside
@@ -3169,7 +3168,6 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
 layout carbar_window
-layout content_main
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3308,6 +3306,7 @@ string chip_text
 string clear_text_end_icon_content_description
 string close_text
 string error_icon_content_description
+string expandCarBar
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
@@ -3406,6 +3405,7 @@ string search_menu_title
 string second_fragment_label
 string status_bar_notification_info_overflow
 string textText
+string text_label
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow

@@ -1,42 +1,35 @@
 package com.wave.carbar;
 
-import android.os.Bundle;
+import android.annotation.SuppressLint;
+import android.content.Context;
+import android.graphics.PixelFormat;
+import android.util.Log;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 
-import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
-import androidx.navigation.fragment.NavHostFragment;
+import com.google.android.material.snackbar.Snackbar;
 
-import com.wave.carbar.databinding.FragmentFirstBinding;
+public class FirstFragment {
+    private final View mView;
 
-public class FirstFragment extends Fragment {
-
-    private FragmentFirstBinding binding;
-
-    @Override
-    public View onCreateView(
-            @NonNull LayoutInflater inflater, ViewGroup container,
-            Bundle savedInstanceState
-    ) {
-
-        binding = FragmentFirstBinding.inflate(inflater, container, false);
-        return binding.getRoot();
-
+    //Opens a new instance of the CarBar and closes this instance of the Minimized bar.
+    public void expandCarBar(Context context) {
+        CarBarWindow CarBar = new CarBarWindow(context);
+        CarBar.open();
     }
 
-    public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-
-        binding.buttonFirst.setOnClickListener(view1 -> NavHostFragment.findNavController(FirstFragment.this)
-                .navigate(R.id.action_FirstFragment_to_SecondFragment));
+    public FirstFragment(Context context, View mView){
+        this.mView = mView;
+        String text_label = "hello";
+        // Expands the CarBar by calling the exapndCarBar function (See above)
+        View contextView = null;
+        mView.findViewById(R.id.tesButton).setOnClickListener(view -> {
+            Snackbar.make(contextView, R.string.text_label, Snackbar.LENGTH_SHORT)
+                    .show();
+        });
+        //Align to the primary side of the screen set by the user (May change later to allow user defined area)
     }
-
-    @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        binding = null;
-    }
-
 }

@@ -4,13 +4,12 @@ package com.wave.carbar.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.widget.Toolbar;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.wave.carbar.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -21,16 +20,12 @@ public final class ActivityMainBinding implements ViewBinding {
   private final CoordinatorLayout rootView;
 
   @NonNull
-  public final FloatingActionButton fab;
-
-  @NonNull
-  public final Toolbar toolbar;
+  public final TextView carBarSettings;
 
   private ActivityMainBinding(@NonNull CoordinatorLayout rootView,
-      @NonNull FloatingActionButton fab, @NonNull Toolbar toolbar) {
+      @NonNull TextView carBarSettings) {
     this.rootView = rootView;
-    this.fab = fab;
-    this.toolbar = toolbar;
+    this.carBarSettings = carBarSettings;
   }
 
   @Override
@@ -60,19 +55,13 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.fab;
-      FloatingActionButton fab = ViewBindings.findChildViewById(rootView, id);
-      if (fab == null) {
+      id = R.id.carBarSettings;
+      TextView carBarSettings = ViewBindings.findChildViewById(rootView, id);
+      if (carBarSettings == null) {
         break missingId;
       }
 
-      id = R.id.toolbar;
-      Toolbar toolbar = ViewBindings.findChildViewById(rootView, id);
-      if (toolbar == null) {
-        break missingId;
-      }
-
-      return new ActivityMainBinding((CoordinatorLayout) rootView, fab, toolbar);
+      return new ActivityMainBinding((CoordinatorLayout) rootView, carBarSettings);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

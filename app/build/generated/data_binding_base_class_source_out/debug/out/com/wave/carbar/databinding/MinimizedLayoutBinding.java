@@ -20,11 +20,11 @@ public final class MinimizedLayoutBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
-  public final Button homeButton;
+  public final Button expandDong;
 
-  private MinimizedLayoutBinding(@NonNull RelativeLayout rootView, @NonNull Button homeButton) {
+  private MinimizedLayoutBinding(@NonNull RelativeLayout rootView, @NonNull Button expandDong) {
     this.rootView = rootView;
-    this.homeButton = homeButton;
+    this.expandDong = expandDong;
   }
 
   @Override
@@ -54,13 +54,13 @@ public final class MinimizedLayoutBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.homeButton;
-      Button homeButton = ViewBindings.findChildViewById(rootView, id);
-      if (homeButton == null) {
+      id = R.id.expandDong;
+      Button expandDong = ViewBindings.findChildViewById(rootView, id);
+      if (expandDong == null) {
         break missingId;
       }
 
-      return new MinimizedLayoutBinding((RelativeLayout) rootView, homeButton);
+      return new MinimizedLayoutBinding((RelativeLayout) rootView, expandDong);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

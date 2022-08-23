@@ -1,11 +1,15 @@
 [
     {
-        "merged": "com.wave.carbar.app-merged_res-41:/layout_minimized_layout.xml.flat",
-        "source": "com.wave.carbar.app-main-43:/layout/minimized_layout.xml"
+        "merged": "com.wave.carbar.app-merged_res-41:/layout_activity_main.xml.flat",
+        "source": "com.wave.carbar.app-main-43:/layout/activity_main.xml"
     },
     {
         "merged": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-merged_res-41:/layout_content_main.xml.flat",
         "source": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-main-43:/layout/content_main.xml"
+    },
+    {
+        "merged": "com.wave.carbar.app-merged_res-41:/layout_fragment_first.xml.flat",
+        "source": "com.wave.carbar.app-main-43:/layout/fragment_first.xml"
     },
     {
         "merged": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-merged_res-41:/xml_data_extraction_rules.xml.flat",
@@ -48,12 +52,12 @@
         "source": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-main-43:/layout/fragment_first.xml"
     },
     {
-        "merged": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-merged_res-41:/menu_menu_main.xml.flat",
-        "source": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-main-43:/menu/menu_main.xml"
-    },
-    {
         "merged": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-merged_res-41:/layout_minimized_layout.xml.flat",
         "source": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-main-43:/layout/minimized_layout.xml"
+    },
+    {
+        "merged": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-merged_res-41:/menu_menu_main.xml.flat",
+        "source": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-main-43:/menu/menu_main.xml"
     },
     {
         "merged": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-merged_res-41:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
