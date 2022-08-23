@@ -86,6 +86,13 @@ public class CarBar {
             }
         });
         //Minimize func
+        mView.findViewById(R.id.homeButton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startNewActivity(context, "com.wave.carbar");
+            }
+        });
+        //Minimize func
         mView.findViewById(R.id.minimizeButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

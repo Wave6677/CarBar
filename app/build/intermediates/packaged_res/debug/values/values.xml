@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="http://schemas.android.com/tools">
     <color name="black">#FF000000</color>
+    <color name="ic_launcher_background">#2167A2</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
@@ -19,7 +20,7 @@
     <string name="previous">Previous</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="textText">🗨️</string>
-    <style name="Theme.CarBar" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.CarBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>

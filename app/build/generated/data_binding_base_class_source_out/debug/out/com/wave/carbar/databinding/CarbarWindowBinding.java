@@ -23,6 +23,9 @@ public final class CarbarWindowBinding implements ViewBinding {
   public final Button closeButton;
 
   @NonNull
+  public final Button homeButton;
+
+  @NonNull
   public final Button minimizeButton;
 
   @NonNull
@@ -35,10 +38,11 @@ public final class CarbarWindowBinding implements ViewBinding {
   public final Button openTexts;
 
   private CarbarWindowBinding(@NonNull RelativeLayout rootView, @NonNull Button closeButton,
-      @NonNull Button minimizeButton, @NonNull Button openMaps, @NonNull Button openMusic,
-      @NonNull Button openTexts) {
+      @NonNull Button homeButton, @NonNull Button minimizeButton, @NonNull Button openMaps,
+      @NonNull Button openMusic, @NonNull Button openTexts) {
     this.rootView = rootView;
     this.closeButton = closeButton;
+    this.homeButton = homeButton;
     this.minimizeButton = minimizeButton;
     this.openMaps = openMaps;
     this.openMusic = openMusic;
@@ -78,6 +82,12 @@ public final class CarbarWindowBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.homeButton;
+      Button homeButton = ViewBindings.findChildViewById(rootView, id);
+      if (homeButton == null) {
+        break missingId;
+      }
+
       id = R.id.minimizeButton;
       Button minimizeButton = ViewBindings.findChildViewById(rootView, id);
       if (minimizeButton == null) {
@@ -102,8 +112,8 @@ public final class CarbarWindowBinding implements ViewBinding {
         break missingId;
       }
 
-      return new CarbarWindowBinding((RelativeLayout) rootView, closeButton, minimizeButton,
-          openMaps, openMusic, openTexts);
+      return new CarbarWindowBinding((RelativeLayout) rootView, closeButton, homeButton,
+          minimizeButton, openMaps, openMusic, openTexts);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

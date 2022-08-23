@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:padding="4dp"
-    android:background="@null">
+    android:background="@color/cardview_shadow_end_color"
+    android:padding="4dp">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -26,19 +25,19 @@
 
                 <Button
                     android:id="@+id/closeButton"
+                    style="?android:attr/buttonBarButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="❌"
-                    style="?android:attr/buttonBarButtonStyle" />
+                    android:text="❌" />
 
                 <Button
                     android:id="@+id/minimizeButton"
+                    style="?android:attr/buttonBarButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="➖"
-                    style="?android:attr/buttonBarButtonStyle" />
+                    android:text="➖" />
             </LinearLayout>
 
             <LinearLayout
@@ -47,12 +46,12 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/open_music"
+                    android:id="@+id/homeButton"
                     style="?android:attr/buttonBarButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/musicText"
+                    android:text="🏠"
                     android:textSize="40dp" />
 
                 <Button
@@ -73,6 +72,16 @@
                     android:layout_weight="1"
                     android:text="@string/textText"
                     android:textSize="40dp" />
+
+                <Button
+                    android:id="@+id/open_music"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/musicText"
+                    android:textSize="40dp" />
+
             </LinearLayout>
         </LinearLayout>
 

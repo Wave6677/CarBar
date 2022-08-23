@@ -1,6 +1,7 @@
 R_DEF: Internal format may change without notice
 local
 color black
+color ic_launcher_background
 color purple_200
 color purple_500
 color purple_700
@@ -20,6 +21,7 @@ id button_second
 id closeButton
 id enlargeCarBar
 id fab
+id homeButton
 id minimizeButton
 id nav_graph
 id nav_host_fragment_content_main
