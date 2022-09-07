@@ -7,11 +7,13 @@
     android:background="@color/cardview_shadow_end_color"
     android:padding="4dp">
 
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        app:cardCornerRadius="5dp">
+        app:cardCornerRadius="5dp"
+        android:forceDarkAllowed="true">
 
         <LinearLayout
             android:layout_width="match_parent"

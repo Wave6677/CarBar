@@ -8,6 +8,10 @@
         "source": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-main-43:/layout/activity_main.xml"
     },
     {
+        "merged": "com.wave.carbar.app-mergeDebugResources-40:/layout/carbar_window.xml",
+        "source": "com.wave.carbar.app-main-43:/layout/carbar_window.xml"
+    },
+    {
         "merged": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-mergeDebugResources-40:/layout/minimized_layout.xml",
         "source": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-main-43:/layout/minimized_layout.xml"
     },
@@ -16,19 +20,11 @@
         "source": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-main-43:/layout/carbar_window.xml"
     },
     {
-        "merged": "com.wave.carbar.app-mergeDebugResources-40:/layout/fragment_first.xml",
-        "source": "com.wave.carbar.app-main-43:/layout/fragment_first.xml"
-    },
-    {
         "merged": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-mergeDebugResources-40:/layout/content_main.xml",
         "source": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-main-43:/layout/content_main.xml"
     },
     {
         "merged": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-mergeDebugResources-40:/layout/fragment_second.xml",
         "source": "/home/james/.gradle/daemon/7.3.3/com.wave.carbar.app-main-43:/layout/fragment_second.xml"
-    },
-    {
-        "merged": "com.wave.carbar.app-mergeDebugResources-40:/layout/activity_main.xml",
-        "source": "com.wave.carbar.app-main-43:/layout/activity_main.xml"
     }
 ]

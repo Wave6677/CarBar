@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:2:1-35:12
-INJECTED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:2:1-35:12
-INJECTED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:2:1-35:12
-INJECTED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:2:1-35:12
+ADDED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:2:1-27:12
 MERGED from [androidx.databinding:viewbinding:7.2.2] /home/james/.gradle/caches/transforms-3/7c89c8a34c2ecc728308042ac673d46f/transformed/viewbinding-7.2.2/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-ui:2.5.1] /home/james/.gradle/caches/transforms-3/172d699a3cea385b2d3041d306f4ec45/transformed/navigation-ui-2.5.1/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.6.1] /home/james/.gradle/caches/transforms-3/b6f52d92dea29c0a7f49d4078033a89a/transformed/material-1.6.1/AndroidManifest.xml:17:1-26:12
@@ -57,22 +57,22 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/j
 MERGED from [androidx.print:print:1.0.0] /home/james/.gradle/caches/transforms-3/f1c1f6112ea6a1f399972dce89bf2eda/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.tracing:tracing:1.0.0] /home/james/.gradle/caches/transforms-3/f981b2b6e245830c4cbabe91d49fc5ad/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /home/james/.gradle/caches/transforms-3/cdcb8e50109b2c2b9e961e9ab007ca34/transformed/annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
-INJECTED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:2:1-35:12
-INJECTED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:2:1-35:12
-INJECTED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:2:1-27:12
 	package
 		ADDED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:4:5-30
 		INJECTED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml
 		INJECTED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml
-		ADDED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:2:1-35:12
+		ADDED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:2:1-27:12
 		INJECTED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml
 	xmlns:tools
 		ADDED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml
-		ADDED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:2:1-35:12
+		ADDED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:2:1-27:12
 		INJECTED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:2:11-69
@@ -89,7 +89,7 @@ ADDED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:9:5
 	android:name
 		ADDED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:9:22-74
 application
-ADDED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:11:5-33:19
+ADDED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:11:5-25:19
 MERGED from [com.google.android.material:material:1.6.1] /home/james/.gradle/caches/transforms-3/b6f52d92dea29c0a7f49d4078033a89a/transformed/material-1.6.1/AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.6.1] /home/james/.gradle/caches/transforms-3/b6f52d92dea29c0a7f49d4078033a89a/transformed/material-1.6.1/AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/james/.gradle/caches/transforms-3/7973dc37a0b9b77da65b027e645a80f7/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
@@ -120,30 +120,22 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /home/james/.gradle/caches/
 		ADDED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:12:9-35
 	android:theme
 		ADDED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:17:9-44
-service#com.wave.carbar.ForegroundService
-ADDED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:20:9-23:38
-	android:enabled
-		ADDED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:22:13-35
-	android:exported
-		ADDED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:23:13-36
-	android:name
-		ADDED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:21:13-46
 activity#com.wave.carbar.MainActivity
-ADDED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:25:9-32:20
+ADDED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:18:9-24:20
 	android:exported
-		ADDED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:26:13-36
+		ADDED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:19:13-36
 	android:name
-		ADDED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:25:19-47
+		ADDED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:18:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:27:13-31:29
+ADDED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:20:13-23:29
 action#android.intent.action.MAIN
-ADDED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:28:17-69
+ADDED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:21:17-69
 	android:name
-		ADDED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:28:25-66
+		ADDED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:21:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:30:17-77
+ADDED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:22:17-77
 	android:name
-		ADDED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:30:27-74
+		ADDED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml:22:27-74
 uses-sdk
 INJECTED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /mnt/4TB/Nextcloud Backup/CarBar/app/src/main/AndroidManifest.xml

@@ -72,6 +72,7 @@ public class CarBarWindow {
             Log.d("Error2",e.toString());
         }
     }
+
     @SuppressLint("InflateParams")
     public CarBarWindow(Context context){
         this.context=context;
