@@ -53,7 +53,7 @@ public class CarBarWindow {
                 }
             }
         } catch (Exception e) {
-            Log.d("Error1",e.toString());
+            Log.d("Error1a",e.toString());
         }
     }
 
