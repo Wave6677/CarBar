@@ -3,7 +3,11 @@
 # ⚠️ WARNING ⚠️
 CarBar is in pre-alpha development and should NOT be used as a final product, nor while operating any other type of vehicle or machinery. The current build is for R&D and testing purposes ONLY. We are not responsible for anything that the end user decides to do while using this app.
 
+Consider donating to me to speed up development, as I can only do this in my free time and I am a starving college student!
+
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/J3J3HCZ12)
+
+Join the [Matrix](https://matrix.to/#/#carbar:matrix.org) room! :)
 # CarBar
 CarBar is a Free Open-Source (FOSS) Android application that implements an intuitive way to interact with your phone while operating a motor vehicle (where legal.) Works on Android 8 Oreo and above
 
